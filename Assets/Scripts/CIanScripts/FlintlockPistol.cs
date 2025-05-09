@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class FlintlockPistol : BaseWeapon
 {
+
+    //stop running my script through chat gpt, its entirely different from when I last opened it - Cian
+    // All comments are ai too, its so blanant. Stop touching my scripts
+
     public float shotRange = 50f;
     public float shotDamage = 10f;
     public GameObject impactEffect;
-    public LineRenderer lineRenderer; // LineRenderer to visualize the shot path
+    public LineRenderer lineRenderer; 
     private iDamageable enemy;
     private HealthManager healthManager;
 
@@ -15,7 +19,7 @@ public class FlintlockPistol : BaseWeapon
 
     public override void Fire()
     {
-        if (Time.time >= nextFireTime && HasAmmo()) // Check if it's time to fire and there's ammo
+        if (Time.time >= nextFireTime && HasAmmo()) //check for ammo b4 firing
         {
             // Fire the first shot only if enough time has passed since the last shot
             Debug.Log("Firing first shot...");
@@ -35,9 +39,8 @@ public class FlintlockPistol : BaseWeapon
         }
         else if (!isCooldownActive)
         {
-            // Only log this once per cooldown
             Debug.Log("Can't fire yet. Cooldown in progress.");
-            isCooldownActive = true; // Mark the cooldown as active
+            isCooldownActive = true; 
         }
     }
 
@@ -56,18 +59,14 @@ public class FlintlockPistol : BaseWeapon
 
             Debug.Log($"Shot hit {hit.collider.gameObject.name} at {hit.point}");
 
-            // Try to get an iDamageable component on the hit object
+            
             iDamageable damageable = hit.collider.GetComponentInParent<iDamageable>();
 
 
             if (damageable != null)
             {
                 Debug.Log("Enemy detected! Applying damage...");
-                damageable.TakeDamage(shotDamage); // Apply damage
-            }
-            else
-            {
-                //Debug.LogWarning("Hit object does not implement iDamageable.");
+                damageable.TakeDamage(shotDamage); 
             }
 
             if (impactEffect != null)
@@ -89,12 +88,10 @@ public class FlintlockPistol : BaseWeapon
 
     private System.Collections.IEnumerator DisableLineRenderer()
     {
-        // Wait for 0.2 seconds (increase the time for better visibility)
         yield return new WaitForSeconds(2f);
         lineRenderer.enabled = false;
     }
 
-    // Call this method to reset the cooldown logging flag
     private void Update()
     {
         // resets cooldown

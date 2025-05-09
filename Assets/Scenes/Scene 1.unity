@@ -376,6 +376,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1635940035}
     - target: {fileID: 4222499694630658425, guid: 783b569843d491e4481be80b01a50bba, type: 3}
+      propertyPath: syringerUI
+      value: 
+      objectReference: {fileID: 1928248575}
+    - target: {fileID: 4222499694630658425, guid: 783b569843d491e4481be80b01a50bba, type: 3}
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 164417780}
@@ -852,21 +856,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 408891294514172460, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 2696811683345648890, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
-    - target: {fileID: 865872257194517240, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 902392753071135115, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
       propertyPath: m_Name
       value: UI_Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1161467463297390170, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3225070667842241722, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
       propertyPath: m_Pivot.x
@@ -948,19 +940,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4026201887152918052, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4439303675687380317, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 6840789607224824943, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8753635636958230750, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 6840789607224824943, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
+      propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 1970240355041939933, guid: 8d61de9a5381aab42ac3f04ae5d2eafd, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: -7469209297011672511, guid: 8d61de9a5381aab42ac3f04ae5d2eafd, type: 3}
+    - target: {fileID: 8753635636958230750, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
+      propertyPath: m_Maskable
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2871730159292145486, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
+    - {fileID: 1023561650555658845, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
+    - {fileID: 999834955044664182, guid: 1f7bd7b7a6e978148a7dfe3c1c81c6ca, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
