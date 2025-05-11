@@ -8,7 +8,6 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
-  importerVersion: 1
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -133,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 360
-    spriteID: eb4e28d5fe976cb42b733e688abcb4e1
+    spriteID: 08708211df2a2cf48870254934bde38e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 360
-    spriteID: 1bb965b0039bb584f9965c842f56e637
+    spriteID: bd077818bd59d4641956ef598c9dd6d3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -173,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 360
-    spriteID: 3c35fbc79bb1578469361c6773205965
+    spriteID: 11a05d9ea1980d54386642ca0936fac3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -193,7 +192,7 @@ ScriptedImporter:
       y: 372
       width: 640
       height: 360
-    spriteID: ba9f35dfda064af4896e9d89ea099840
+    spriteID: fb1f2a938220a824cb520db165aa9fb9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -213,7 +212,7 @@ ScriptedImporter:
       y: 372
       width: 640
       height: 360
-    spriteID: f3a3a9b7d04a1814283d6f7e95118fb3
+    spriteID: b99fefff374b3754399e28c51bbdec2f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -233,7 +232,7 @@ ScriptedImporter:
       y: 372
       width: 640
       height: 360
-    spriteID: 55cfa365764b2104ea3b906aca753fda
+    spriteID: c0ae4a7fa2533194d9bf54d850b713c1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -253,7 +252,7 @@ ScriptedImporter:
       y: 740
       width: 640
       height: 360
-    spriteID: deba084bf65f64e4d928af7583e6d4f0
+    spriteID: 2e10d31622ef39a42b80180f05615d2e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -273,7 +272,7 @@ ScriptedImporter:
       y: 740
       width: 640
       height: 360
-    spriteID: 8341f6212c731b5449851bd9cd8cf016
+    spriteID: 816a2b53d2636114b88c887c04653622
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -293,7 +292,7 @@ ScriptedImporter:
       y: 740
       width: 640
       height: 360
-    spriteID: 3fcbf6fe76822ce46b73aa38e46898b8
+    spriteID: e7b63fc1b20f7364f93c9606c0b81e4c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -305,93 +304,84 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1326037293
+    guid: 1844172087
     name: gatlingsyringe gun
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: gatlingsyringe gun_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: eb4e28d5fe976cb42b733e688abcb4e1
-    - name: Frame_1
+      spriteId: 08708211df2a2cf48870254934bde38e
+    - name: gatlingsyringe gun_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: 1bb965b0039bb584f9965c842f56e637
-    - name: Frame_2
+      spriteId: bd077818bd59d4641956ef598c9dd6d3
+    - name: gatlingsyringe gun_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: 3c35fbc79bb1578469361c6773205965
-    - name: Frame_3
+      spriteId: 11a05d9ea1980d54386642ca0936fac3
+    - name: gatlingsyringe gun_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: ba9f35dfda064af4896e9d89ea099840
-    - name: Frame_4
+      spriteId: fb1f2a938220a824cb520db165aa9fb9
+    - name: gatlingsyringe gun_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: f3a3a9b7d04a1814283d6f7e95118fb3
-    - name: Frame_5
+      spriteId: b99fefff374b3754399e28c51bbdec2f
+    - name: gatlingsyringe gun_Frame_5
       frameIndex: 5
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: 55cfa365764b2104ea3b906aca753fda
-    - name: Frame_6
+      spriteId: c0ae4a7fa2533194d9bf54d850b713c1
+    - name: gatlingsyringe gun_Frame_6
       frameIndex: 6
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: deba084bf65f64e4d928af7583e6d4f0
-    - name: Frame_7
+      spriteId: 2e10d31622ef39a42b80180f05615d2e
+    - name: gatlingsyringe gun_Frame_7
       frameIndex: 7
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: 8341f6212c731b5449851bd9cd8cf016
-    - name: Frame_8
+      spriteId: 816a2b53d2636114b88c887c04653622
+    - name: gatlingsyringe gun_Frame_8
       frameIndex: 8
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: 3fcbf6fe76822ce46b73aa38e46898b8
+      spriteId: e7b63fc1b20f7364f93c9606c0b81e4c
     linkedCells: []
     parentIndex: -1
   platformSettings: []
@@ -399,4 +389,3 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 640, y: 360}
-  previousTextureSize: {x: 2048, y: 2048}

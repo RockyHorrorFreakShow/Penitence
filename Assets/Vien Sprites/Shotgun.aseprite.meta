@@ -8,7 +8,6 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
-  importerVersion: 1
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -133,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 360
-    spriteID: b2d3b7a7fd79e474e84e9e240938a03e
+    spriteID: 63e7c9e5902fb544688e43d8bd6373f3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 360
-    spriteID: b47c9cb9e36fa034c85e063d27ded59b
+    spriteID: 1c22a168b90ecf0428aa5411a8605e54
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -173,7 +172,7 @@ ScriptedImporter:
       y: 372
       width: 640
       height: 360
-    spriteID: 8f42b041c6a25784988f81144fd47861
+    spriteID: 733900ac5303c8349888ffa3854b4679
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -193,7 +192,7 @@ ScriptedImporter:
       y: 372
       width: 640
       height: 360
-    spriteID: dac7c9d3e8915d347abd7f04aeded06a
+    spriteID: 44fa1a23f502195429a311ac34093050
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -213,7 +212,7 @@ ScriptedImporter:
       y: 372
       width: 640
       height: 360
-    spriteID: 0fc21ff679ce56248b9ee8d389945fd4
+    spriteID: e7dc8fb5e9cb87f4e889f52fb9010be5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -233,7 +232,7 @@ ScriptedImporter:
       y: 740
       width: 640
       height: 360
-    spriteID: 5745c07e8732f7240b22cf2fb9ac2d02
+    spriteID: 2a951ee4dae9a394db0a4fd90260fc1d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -253,7 +252,7 @@ ScriptedImporter:
       y: 4
       width: 641
       height: 360
-    spriteID: e1be5a761cab3ef4992b759d53fceeda
+    spriteID: 85dd3d5959ae24444ba9546f7d41a729
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -273,7 +272,7 @@ ScriptedImporter:
       y: 740
       width: 640
       height: 360
-    spriteID: 1ae2d7b819d3ae3428b2e0f0e133fed9
+    spriteID: 010ebc219e54083458462ba337903501
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -293,7 +292,7 @@ ScriptedImporter:
       y: 740
       width: 640
       height: 360
-    spriteID: 15851bf32cdb97d458c360333a5d8cef
+    spriteID: d7c7a29a9418622448aa7f02c85b7d66
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -313,7 +312,7 @@ ScriptedImporter:
       y: 1108
       width: 640
       height: 360
-    spriteID: ba795a57d6f0b5a4e848f07d7d2fa1b7
+    spriteID: e8b8fc8588af8c64c8e81f25aab73b75
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -333,7 +332,7 @@ ScriptedImporter:
       y: 1108
       width: 640
       height: 360
-    spriteID: f869990a7d39f8d419294f6d8bc7cf45
+    spriteID: d4c542d8977069c42850ed9711c94581
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -353,7 +352,7 @@ ScriptedImporter:
       y: 1108
       width: 640
       height: 360
-    spriteID: 15d7b60e6b23df645b92a25b45c14c4d
+    spriteID: 5f15519698297dd45926c27dc205c73d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -365,120 +364,108 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1757200172
+    guid: 1823766332
     name: Shotgun
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: Shotgun_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 640
         height: 360
-      spriteId: b2d3b7a7fd79e474e84e9e240938a03e
-    - name: Frame_1
+      spriteId: 63e7c9e5902fb544688e43d8bd6373f3
+    - name: Shotgun_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 640
         height: 360
-      spriteId: b47c9cb9e36fa034c85e063d27ded59b
-    - name: Frame_2
+      spriteId: 1c22a168b90ecf0428aa5411a8605e54
+    - name: Shotgun_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 640
         height: 360
-      spriteId: 8f42b041c6a25784988f81144fd47861
-    - name: Frame_3
+      spriteId: 733900ac5303c8349888ffa3854b4679
+    - name: Shotgun_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 640
         height: 360
-      spriteId: dac7c9d3e8915d347abd7f04aeded06a
-    - name: Frame_4
+      spriteId: 44fa1a23f502195429a311ac34093050
+    - name: Shotgun_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 640
         height: 360
-      spriteId: 0fc21ff679ce56248b9ee8d389945fd4
-    - name: Frame_5
+      spriteId: e7dc8fb5e9cb87f4e889f52fb9010be5
+    - name: Shotgun_Frame_5
       frameIndex: 5
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 640
         height: 360
-      spriteId: 5745c07e8732f7240b22cf2fb9ac2d02
-    - name: Frame_6
+      spriteId: 2a951ee4dae9a394db0a4fd90260fc1d
+    - name: Shotgun_Frame_6
       frameIndex: 6
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 641
         height: 360
-      spriteId: e1be5a761cab3ef4992b759d53fceeda
-    - name: Frame_7
+      spriteId: 85dd3d5959ae24444ba9546f7d41a729
+    - name: Shotgun_Frame_7
       frameIndex: 7
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: 1ae2d7b819d3ae3428b2e0f0e133fed9
-    - name: Frame_8
+      spriteId: 010ebc219e54083458462ba337903501
+    - name: Shotgun_Frame_8
       frameIndex: 8
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 640
         height: 360
-      spriteId: 15851bf32cdb97d458c360333a5d8cef
-    - name: Frame_9
+      spriteId: d7c7a29a9418622448aa7f02c85b7d66
+    - name: Shotgun_Frame_9
       frameIndex: 9
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 640
         height: 360
-      spriteId: ba795a57d6f0b5a4e848f07d7d2fa1b7
-    - name: Frame_10
+      spriteId: e8b8fc8588af8c64c8e81f25aab73b75
+    - name: Shotgun_Frame_10
       frameIndex: 10
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 640
         height: 360
-      spriteId: f869990a7d39f8d419294f6d8bc7cf45
-    - name: Frame_11
+      spriteId: d4c542d8977069c42850ed9711c94581
+    - name: Shotgun_Frame_11
       frameIndex: 11
-      additiveSortOrder: 0
       cellRect:
         x: -1
         y: 0
         width: 640
         height: 360
-      spriteId: 15d7b60e6b23df645b92a25b45c14c4d
+      spriteId: 5f15519698297dd45926c27dc205c73d
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -534,4 +521,3 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 640, y: 360}
-  previousTextureSize: {x: 2048, y: 2048}
