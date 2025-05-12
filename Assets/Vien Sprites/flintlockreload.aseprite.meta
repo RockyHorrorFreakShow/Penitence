@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 183
-    spriteID: a0ed77b51803cf347b2f63afac3cd77f
+    spriteID: b2cf1f764639c7c49bd16bd391ffbdfb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 195
       width: 635
       height: 183
-    spriteID: d821832a64f454043a2188befedd8802
+    spriteID: f9e1142d0cbe5e94e8a41ecb3e58550f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 386
       width: 627
       height: 183
-    spriteID: c865f4ae265c58044b30880e5f9f63ca
+    spriteID: 6db846ea026ea654ca01493cf0ff5389
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 577
       width: 620
       height: 183
-    spriteID: 41e966861fdb5d04db6b5fc677ccb3a1
+    spriteID: e87c04dbc7de08e439f89a9dd614601d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 768
       width: 608
       height: 183
-    spriteID: 4c7cccf623faa954c89940a6d783a3d4
+    spriteID: 2aa74478befbd3848be7555c510f7a56
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 959
       width: 608
       height: 183
-    spriteID: 9de586a30fad19c4c8ec1a60ed11ced5
+    spriteID: 99b34c69e6adeb7499e948749728cbcc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -257,7 +257,7 @@ ScriptedImporter:
         y: 0
         width: 640
         height: 183
-      spriteId: a0ed77b51803cf347b2f63afac3cd77f
+      spriteId: b2cf1f764639c7c49bd16bd391ffbdfb
     - name: flintlockreload_Frame_1
       frameIndex: 1
       cellRect:
@@ -265,7 +265,7 @@ ScriptedImporter:
         y: 0
         width: 635
         height: 183
-      spriteId: d821832a64f454043a2188befedd8802
+      spriteId: f9e1142d0cbe5e94e8a41ecb3e58550f
     - name: flintlockreload_Frame_2
       frameIndex: 2
       cellRect:
@@ -273,7 +273,7 @@ ScriptedImporter:
         y: 0
         width: 627
         height: 183
-      spriteId: c865f4ae265c58044b30880e5f9f63ca
+      spriteId: 6db846ea026ea654ca01493cf0ff5389
     - name: flintlockreload_Frame_3
       frameIndex: 3
       cellRect:
@@ -281,7 +281,7 @@ ScriptedImporter:
         y: 0
         width: 620
         height: 183
-      spriteId: 41e966861fdb5d04db6b5fc677ccb3a1
+      spriteId: e87c04dbc7de08e439f89a9dd614601d
     - name: flintlockreload_Frame_4
       frameIndex: 4
       cellRect:
@@ -289,7 +289,7 @@ ScriptedImporter:
         y: 0
         width: 608
         height: 183
-      spriteId: 4c7cccf623faa954c89940a6d783a3d4
+      spriteId: 2aa74478befbd3848be7555c510f7a56
     - name: flintlockreload_Frame_5
       frameIndex: 5
       cellRect:
@@ -297,7 +297,7 @@ ScriptedImporter:
         y: 0
         width: 608
         height: 183
-      spriteId: 9de586a30fad19c4c8ec1a60ed11ced5
+      spriteId: 99b34c69e6adeb7499e948749728cbcc
     linkedCells: []
     parentIndex: -1
   platformSettings:

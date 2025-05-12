@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 585
       width: 237
       height: 269
-    spriteID: 0ead3d2198b1e3d4193b7f7bca74665e
+    spriteID: 1a2bd44846dfdd843b1b58aa66ab52a9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 253
       height: 284
-    spriteID: 1d2397c9c71a841429323761c6b4a2e1
+    spriteID: 5c6d9a47bc19c4f4da8a00415c5dfef2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 296
       width: 237
       height: 281
-    spriteID: 6b61a79e0830f6e4ca770a5fb9218faa
+    spriteID: 81d56037448a40a4fbba2b6dccd58c12
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -197,7 +197,7 @@ ScriptedImporter:
         y: 28
         width: 237
         height: 269
-      spriteId: 0ead3d2198b1e3d4193b7f7bca74665e
+      spriteId: 1a2bd44846dfdd843b1b58aa66ab52a9
     - name: SkullEnemy_Frame_1
       frameIndex: 1
       cellRect:
@@ -205,7 +205,7 @@ ScriptedImporter:
         y: 20
         width: 253
         height: 284
-      spriteId: 1d2397c9c71a841429323761c6b4a2e1
+      spriteId: 5c6d9a47bc19c4f4da8a00415c5dfef2
     - name: SkullEnemy_Frame_2
       frameIndex: 2
       cellRect:
@@ -213,7 +213,7 @@ ScriptedImporter:
         y: 28
         width: 237
         height: 281
-      spriteId: 6b61a79e0830f6e4ca770a5fb9218faa
+      spriteId: 81d56037448a40a4fbba2b6dccd58c12
     linkedCells: []
     parentIndex: -1
   platformSettings: []

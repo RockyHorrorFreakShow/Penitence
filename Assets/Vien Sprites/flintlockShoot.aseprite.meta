@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 360
-    spriteID: 54c0c19ab5903b840900cb1e3235028b
+    spriteID: 5c17b6f426840354db19774bc27bc2c7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 360
-    spriteID: 2de8afcfeef2e1c4faf27809df0dc016
+    spriteID: 1ece051b79c1b7a46bba28f06eeb6328
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 360
-    spriteID: e312130dbb8364a43bb855c5ab8b4729
+    spriteID: 783e0c9f24ddb4541a9345a496f66643
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 372
       width: 640
       height: 359
-    spriteID: 6adcdf8dcda573847803057ef6837479
+    spriteID: 0faca5ffb9d4088468201c8719e4d24f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 372
       width: 640
       height: 359
-    spriteID: 0da21119e5ea5d648b680d9de0357682
+    spriteID: 481315cb7cf4eea44953d4096983185f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 372
       width: 640
       height: 360
-    spriteID: e51102023ec00a94e9c060861c837664
+    spriteID: 1661a35dfb0a54b46bdd3694320d6ca8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -257,7 +257,7 @@ ScriptedImporter:
         y: 0
         width: 640
         height: 360
-      spriteId: 54c0c19ab5903b840900cb1e3235028b
+      spriteId: 5c17b6f426840354db19774bc27bc2c7
     - name: flintlockShoot_Frame_1
       frameIndex: 1
       cellRect:
@@ -265,7 +265,7 @@ ScriptedImporter:
         y: 0
         width: 640
         height: 360
-      spriteId: 2de8afcfeef2e1c4faf27809df0dc016
+      spriteId: 1ece051b79c1b7a46bba28f06eeb6328
     - name: flintlockShoot_Frame_2
       frameIndex: 2
       cellRect:
@@ -273,7 +273,7 @@ ScriptedImporter:
         y: 0
         width: 640
         height: 360
-      spriteId: e312130dbb8364a43bb855c5ab8b4729
+      spriteId: 783e0c9f24ddb4541a9345a496f66643
     - name: flintlockShoot_Frame_3
       frameIndex: 3
       cellRect:
@@ -281,7 +281,7 @@ ScriptedImporter:
         y: 0
         width: 640
         height: 359
-      spriteId: 6adcdf8dcda573847803057ef6837479
+      spriteId: 0faca5ffb9d4088468201c8719e4d24f
     - name: flintlockShoot_Frame_4
       frameIndex: 4
       cellRect:
@@ -289,7 +289,7 @@ ScriptedImporter:
         y: 0
         width: 640
         height: 359
-      spriteId: 0da21119e5ea5d648b680d9de0357682
+      spriteId: 481315cb7cf4eea44953d4096983185f
     - name: flintlockShoot_Frame_5
       frameIndex: 5
       cellRect:
@@ -297,7 +297,7 @@ ScriptedImporter:
         y: 0
         width: 640
         height: 360
-      spriteId: e51102023ec00a94e9c060861c837664
+      spriteId: 1661a35dfb0a54b46bdd3694320d6ca8
     linkedCells: []
     parentIndex: -1
   platformSettings:
