@@ -26,36 +26,49 @@ public class RoomEnemySpawner : MonoBehaviour
                 spawnPosition = hit.position;
 
                 // Check if the spawn position is buried under a platform
-                Vector3 rayOrigin = spawnPosition + Vector3.up * 5f;
-                float rayDistance = 10f;
+                //Vector3 spawnPosition = GetRandomSpawnPoint(room);
 
-                bool isBuriedUnderPlatform = Physics.Raycast(rayOrigin, Vector3.down, out RaycastHit hitInfo, rayDistance, LayerMask.GetMask("IsGround")) &&
-                                             (hitInfo.point.y - spawnPosition.y) < -0.5f;
+                // Step 1: Raycast downward from above the room
+                Vector3 rayOrigin = spawnPosition + Vector3.up * 10f;
+                float rayDistance = 20f;
 
-                if (isBuriedUnderPlatform)
+                if (Physics.Raycast(rayOrigin, Vector3.down, out RaycastHit hitInfo, rayDistance, LayerMask.GetMask("IsGround")))
                 {
-                    Debug.LogWarning("Spawn position is buried under platform — skipping");
-                    continue;
-                }
+                    Vector3 topSurface = hitInfo.point;
 
-
-                // Check for surface collisions (walls, props, clutter)
-                if (!Physics.CheckSphere(spawnPosition + Vector3.up * 3f, 3f, LayerMask.GetMask("IsGround")))
-                {
-                    GameObject enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
-                    spawnedEnemies.Add(enemy);
-
-                    Enemy enemyScript = enemy.GetComponent<Enemy>();
-                    if (enemyScript != null)
+                    // Step 2: Validate position with NavMesh
+                    if (NavMesh.SamplePosition(topSurface, out NavMeshHit navHit, 1f, NavMesh.AllAreas))
                     {
-                        enemyScript.AssignRoom(room);
-                        room.RegisterEnemy();
+                        topSurface = navHit.position;
+
+                        // Step 3: Final ground clearance check to avoid props/obstacles
+                        if (!Physics.CheckSphere(topSurface + Vector3.up * 0.5f, 0.5f, LayerMask.GetMask("IsGround")))
+                        {
+                            GameObject enemy = Instantiate(enemyPrefab, topSurface, Quaternion.identity);
+                            spawnedEnemies.Add(enemy);
+
+                            Enemy enemyScript = enemy.GetComponent<Enemy>();
+                            if (enemyScript != null)
+                            {
+                                enemyScript.AssignRoom(room);
+                                room.RegisterEnemy();
+                            }
+                        }
+                        else
+                        {
+                            Debug.LogWarning($"Blocked spawn on IsGround collision at {topSurface}");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning("No valid NavMesh found near top surface.");
                     }
                 }
                 else
                 {
-                    Debug.LogWarning($"Spawn blocked at {spawnPosition} - collided with IsGround layer");
+                    Debug.LogWarning("Raycast failed to find ground below intended spawn point.");
                 }
+
             }
             else
             {
