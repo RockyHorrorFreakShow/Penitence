@@ -49,12 +49,12 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   shootSound: {fileID: 8300000, guid: dd6be394af9317145a9b2b4bc67711fd, type: 3}
   maxAmmo: 2
-  fireRate: 1.2
-  bolts: 5
+  fireRate: 1.5
+  bolts: 6
   shotRange: 25
   shotDamage: 10
   impactEffect: {fileID: 0}
-  lineRendererPrefab: {fileID: -9020643131668142818}
+  bulletTrailPrefab: {fileID: 6466589318527025020, guid: 7aa9133bf1d79d14fba88e9367fc1704, type: 3}
   spreadMultiplier: 0.05
 --- !u!82 &5587594693353534738
 AudioSource:

@@ -17,6 +17,9 @@ public class PenanceStare : MonoBehaviour
 
     private bool isActive = false;
 
+    public AudioSource PlayerAudioSource;
+    public AudioClip PenanceBlast;
+
     void Start()
     {
         PenanceTutorial.gameObject.SetActive(true);
@@ -34,6 +37,7 @@ public class PenanceStare : MonoBehaviour
             CastPenanceStareCone();
             cooldownTimer = cooldownDuration;  
             PenanceTutorial.SetActive(false);
+            PlayerAudioSource.PlayOneShot(PenanceBlast);
         }
 
         if (cooldownTimer > 0f)

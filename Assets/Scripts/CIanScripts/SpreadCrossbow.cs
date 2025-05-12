@@ -7,7 +7,10 @@ public class SpreadCrossbow : BaseWeapon
     public float shotRange = 50f;
     public float shotDamage = 10f;
     public GameObject impactEffect;
-    public LineRenderer lineRendererPrefab;
+
+
+    [Header("Line renderer junk 2: Electric Boogaloo")]
+    public GameObject bulletTrailPrefab; // UNIVERSAL BETWEEN WEAPONS !!!
     public float spreadMultiplier = 0.2f;
 
     public override void Fire()
@@ -21,9 +24,9 @@ public class SpreadCrossbow : BaseWeapon
 
                 Vector3 rayStart = playerCamera.transform.position;
                 Vector3 rayDirection = (playerCamera.transform.forward + spread).normalized;
+                Vector3 hitPoint;
 
-                RaycastHit hit;
-                if (Physics.Raycast(rayStart, rayDirection, out hit, shotRange))
+                if (Physics.Raycast(rayStart, rayDirection, out RaycastHit hit, shotRange))
                 {
                     iDamageable damageable = hit.collider.GetComponentInParent<iDamageable>();
                     if (damageable != null)
@@ -36,27 +39,27 @@ public class SpreadCrossbow : BaseWeapon
                         Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
                     }
 
-                    StartCoroutine(DrawShotLine(rayStart, hit.point));
+                    hitPoint = hit.point;
                 }
                 else
                 {
-                    StartCoroutine(DrawShotLine(rayStart, rayStart + rayDirection * shotRange));
+                    hitPoint = rayStart + rayDirection * shotRange;
+                }
+
+                // new bullet trail, its the same one as the flintlockm so modify the same matierial and itll change this too
+                if (bulletTrailPrefab != null)
+                {
+                    GameObject trailGO = Instantiate(bulletTrailPrefab);
+                    BulletTrail trail = trailGO.GetComponent<BulletTrail>();
+                    if (trail != null)
+                    {
+                        trail.Init(rayStart, hitPoint);
+                    }
                 }
             }
 
             nextFireTime = Time.time + fireRate;
             PlayShootSound();
         }
-    }
-
-    private IEnumerator DrawShotLine(Vector3 start, Vector3 end)
-    {
-        LineRenderer shotLine = Instantiate(lineRendererPrefab);
-        shotLine.positionCount = 2;
-        shotLine.SetPosition(0, start);
-        shotLine.SetPosition(1, end);
-
-        yield return new WaitForSeconds(2f);
-        Destroy(shotLine.gameObject);
     }
 }

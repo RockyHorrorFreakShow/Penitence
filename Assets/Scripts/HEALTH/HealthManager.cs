@@ -13,6 +13,9 @@ public class HealthManager : MonoBehaviour, iDamageable
     public float invincibilityTime = 1f; // Time after taking damage where player is invincible
     private bool isInvincible = false;
 
+    public AudioSource PlayerAudioSource;
+    public AudioClip DamageSFX;
+
     private void Start()
     {
         MaxHealth = GameManager.Instance.playerHealth;
@@ -35,8 +38,10 @@ public class HealthManager : MonoBehaviour, iDamageable
 
     public void TakeDamage(float damageAmount)
     {
+        PlayerAudioSource.PlayOneShot(DamageSFX);
         if (!isInvincible || !CompareTag("Player"))
         {
+
             CurrentHealth -= damageAmount;
             if (CompareTag("Player"))
             {

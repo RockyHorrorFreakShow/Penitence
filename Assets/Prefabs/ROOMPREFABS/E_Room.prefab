@@ -691,14 +691,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 8410424729347473774}
     m_Modifications:
     - target: {fileID: 4591041610279636739, guid: 7877329b81f6b094bb18bc93838dd279, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 78.19999
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591041610279636739, guid: 7877329b81f6b094bb18bc93838dd279, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 78.19999
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591041610279636739, guid: 7877329b81f6b094bb18bc93838dd279, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.446999
       objectReference: {fileID: 0}
@@ -803,6 +795,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9eb86be5b91fe894db0dac1cd94e08ba, type: 3}
       propertyPath: m_Name
       value: HouseTurnedScaled (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9eb86be5b91fe894db0dac1cd94e08ba, type: 3}
+      propertyPath: m_TagString
+      value: Grappleable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1444,6 +1440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House1Scaled
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 58c1a95f5541bb64da753d7a3e7d0b94, type: 3}
+      propertyPath: m_TagString
+      value: Grappleable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1505,6 +1505,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f70599c495f89f146a193bcace02b034, type: 3}
       propertyPath: m_Name
       value: CornerHouseLeftPlane (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f70599c495f89f146a193bcace02b034, type: 3}
+      propertyPath: m_TagString
+      value: Grappleable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1568,6 +1572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HouseTurnedScaled
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9eb86be5b91fe894db0dac1cd94e08ba, type: 3}
+      propertyPath: m_TagString
+      value: Grappleable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1629,6 +1637,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f70599c495f89f146a193bcace02b034, type: 3}
       propertyPath: m_Name
       value: CornerHouseLeftPlane
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f70599c495f89f146a193bcace02b034, type: 3}
+      propertyPath: m_TagString
+      value: Grappleable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2527,6 +2539,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 58c1a95f5541bb64da753d7a3e7d0b94, type: 3}
       propertyPath: m_Name
       value: House1Scaled (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 58c1a95f5541bb64da753d7a3e7d0b94, type: 3}
+      propertyPath: m_TagString
+      value: Grappleable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

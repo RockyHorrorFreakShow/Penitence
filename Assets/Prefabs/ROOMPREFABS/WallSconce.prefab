@@ -4841,9 +4841,10 @@ GameObject:
   - component: {fileID: 4591041610279636739}
   - component: {fileID: 7686010540365662916}
   - component: {fileID: 3790688988524827466}
+  - component: {fileID: 141643161970531019}
   m_Layer: 0
   m_Name: WallSconce
-  m_TagString: Untagged
+  m_TagString: Grappleable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4856,15 +4857,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5220088914204747571}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 37.124744, y: 52.85323, z: 261.0658}
-  m_LocalScale: {x: 78.2, y: 78.2, z: 78.2}
+  m_LocalScale: {x: 78.2, y: 78.19999, z: 78.19999}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4972364694754128689}
   - {fileID: 3968283690073718296}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &7686010540365662916
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4915,6 +4916,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &141643161970531019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220088914204747571}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.014574772, y: 0.026626691, z: 0.027349992}
+  m_Center: {x: 0, y: -0.0018553069, z: 0.038048044}
 --- !u!1 &6093737109302445179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4925,6 +4947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3968283690073718296}
   - component: {fileID: 2049910212711236819}
+  - component: {fileID: 2608775814131398455}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -4958,14 +4981,14 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.9299191, g: 0.8474466, b: 0.11905971, a: 1}
-  m_Intensity: 1
-  m_Range: 4.877989
+  m_Color: {r: 0.99607843, g: 0.9607843, b: 0.6431373, a: 1}
+  m_Intensity: 5
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5001,7 +5024,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 5
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -5009,3 +5032,15 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!122 &2608775814131398455
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6093737109302445179}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4284606968
+  m_Size: 0.6

@@ -5,9 +5,8 @@ public class GatlingSyringer : BaseWeapon
     public float syringeRange = 50f;
     public float syringeDamage = 10f;
     public GameObject impactEffect;
-    public float tickEffect = 3f; 
-    public float sloweffectPercentage = 0.5f; 
-    public LineRenderer lineRenderer;
+    [Header("line renderer junk 3: Return of the Jedi")]
+    public GameObject bulletTrailPrefab;
 
     private bool isCooldownActive = false;
 
@@ -24,32 +23,20 @@ public class GatlingSyringer : BaseWeapon
     {
         Vector3 rayStart = playerCamera.transform.position;
         Vector3 rayDirection = playerCamera.transform.forward;
-
-        lineRenderer.enabled = true;
-        lineRenderer.positionCount = 2;
-        lineRenderer.SetPosition(0, rayStart);
+        Vector3 rayEnd;
 
         if (Physics.Raycast(rayStart, rayDirection, out RaycastHit hit, syringeRange))
         {
-            lineRenderer.SetPosition(1, hit.point);
+            rayEnd = hit.point;
 
             Debug.Log($"Shot hit {hit.collider.gameObject.name} at {hit.point}");
 
-            // Get the damageable component from the hit object
             iDamageable damageable = hit.collider.GetComponentInParent<iDamageable>();
-
             if (damageable != null)
             {
-                // Apply damage to the enemy
                 damageable.TakeDamage(syringeDamage);
-
-                // If the object is an enemy, apply the slow effect
-                if (hit.collider.GetComponentInParent<Enemy>() != null)
-                {
-                    Enemy enemy = hit.collider.GetComponentInParent<Enemy>();
-                    
-                }
             }
+
             if (impactEffect != null)
             {
                 Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
@@ -57,23 +44,32 @@ public class GatlingSyringer : BaseWeapon
         }
         else
         {
-            lineRenderer.SetPosition(1, rayStart + rayDirection * syringeRange);
+            rayEnd = rayStart + rayDirection * syringeRange;
+        }
+
+        if (bulletTrailPrefab != null)
+        {
+            GameObject trailGO = Instantiate(bulletTrailPrefab);
+            trailGO.transform.parent = null; //kills the bullet trail even after the weapons unselected to prevent a bug that stopped them from despawning
+            BulletTrail trail = trailGO.GetComponent<BulletTrail>();
+            if (trail != null)
+            {
+                trail.Init(rayStart, rayEnd);
+            }
         }
 
         DecreaseAmmo();
         PlayShootSound();
-        StartCoroutine(DisableLineRenderer());
-    }
-
-    private System.Collections.IEnumerator DisableLineRenderer()
-    {
-        yield return new WaitForSeconds(2f);
-        lineRenderer.enabled = false;
     }
 
     private void Update()
     {
-        // resets cooldown
+        if (Input.GetButton("Fire1") && Time.time >= nextFireTime && HasAmmo())
+        {
+            Fire();
+        }
+
+        //backup to ensure cooldown is reset
         if (Time.time >= nextFireTime)
         {
             isCooldownActive = false;

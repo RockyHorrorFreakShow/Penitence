@@ -4840,6 +4840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5042302946543631518}
   - component: {fileID: 5445494199214996797}
+  - component: {fileID: 1182021706423424918}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -4873,14 +4874,14 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.9299191, g: 0.8474466, b: 0.11905971, a: 1}
-  m_Intensity: 1
-  m_Range: 4.877989
+  m_Color: {r: 0.99607843, g: 0.9607843, b: 0.6431373, a: 1}
+  m_Intensity: 5
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4916,7 +4917,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 5
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -4924,6 +4925,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!122 &1182021706423424918
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8233713962661766006}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4284606711
+  m_Size: 0.6
 --- !u!1001 &236752093797775190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4934,15 +4947,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.277811
+      value: -11.500999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000023841858
+      value: -0.3101077
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.331419
+      value: 0.20910072
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4976,6 +4989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lantern
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
+      propertyPath: m_TagString
+      value: Grappleable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4985,10 +5002,39 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5042302946543631518}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3136968373603582642}
   m_SourcePrefab: {fileID: 100100000, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
 --- !u!4 &343300219659096253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
   m_PrefabInstance: {fileID: 236752093797775190}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1119273251305441799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b0dc3e4b1df70d4fa3c7060b93e0d2b, type: 3}
+  m_PrefabInstance: {fileID: 236752093797775190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3136968373603582642
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119273251305441799}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.014574772, y: 0.014771546, z: 0.03476567}
+  m_Center: {x: 0, y: -2.7307876e-16, z: 0.07579676}

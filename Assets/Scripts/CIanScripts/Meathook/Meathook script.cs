@@ -16,6 +16,9 @@ public class Meathook_script : MonoBehaviour
 
     public GameObject GrappleTutorial;
 
+    public AudioSource Squelchorigin;
+    public AudioClip tendril_squelch;
+
 
 
     void Start()
@@ -26,10 +29,11 @@ public class Meathook_script : MonoBehaviour
 
     void Update()
     {
-        //E's the keybind for the grapple, but
+        //E's the keybind for the grapple, but its changeable in the inspector
         if (Input.GetKeyDown(KeyCode.E) && canGrapple && !isGrappling)
         {
             ShootGrapple();
+            Squelchorigin.PlayOneShot(tendril_squelch);
         }
         if (isGrappling)
         {

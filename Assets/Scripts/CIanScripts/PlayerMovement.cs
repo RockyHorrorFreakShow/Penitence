@@ -24,12 +24,16 @@ public class PlayerMovement : MonoBehaviour
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
 
-    // Reference to HealthManager
     private HealthManager healthManager;
     private SceneManagerCustom sceneManager;
 
+    [Header("Tutorial movement")]
+    public GameObject MovementTutorialText;
+
+    
     void Start()
     {
+        MovementTutorialText.SetActive(true);
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         sceneManager = FindObjectOfType<SceneManagerCustom>();
@@ -38,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
             Debug.LogError("Scenemaneger is missing");
         }
 
-        // Assign the HealthManager instance
         healthManager = GetComponent<HealthManager>();
         if (healthManager == null)
         {
@@ -50,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     {
         MyInput();
         SpeedControl();
-        // logic for groundcheck
+        // logic for groundcheck, its a lil messy but it serves its purpose
         grounded = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.5f + 0.2f, IsGround);
 
         if (grounded)
@@ -62,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
     }
-
+    //input handling 
     private void MyInput()
     {
         HorizontalInput = Input.GetAxisRaw("Horizontal");
@@ -74,6 +77,11 @@ public class PlayerMovement : MonoBehaviour
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }
+        if (MovementTutorialText.activeSelf && HorizontalInput != 0)
+        {
+            MovementTutorialText.SetActive(false);
+        }
+
     }
 
     private void MovePlayer()
@@ -84,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         else if (!grounded)
             rb.AddForce(Movedirection.normalized * 10f * AirMultiplier, ForceMode.Force);
     }
-
+    //This is all alterable in editor, if you change anything here itll mess up the default movement
     private void SpeedControl()
     {
         Vector3 FlatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
@@ -95,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }
-
+    //jump logic, wonky on slopes but works
     private void Jump()
     {
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
@@ -106,10 +114,10 @@ public class PlayerMovement : MonoBehaviour
     {
         ReadyToJump = true;
     }
-
+    //handles death for the player
     private void Die()
     {
-        Debug.Log("Player died!");
+        Debug.Log("Player died");
         if (sceneManager != null)
         {
             sceneManager.ReloadLevel();

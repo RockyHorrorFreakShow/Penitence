@@ -8,12 +8,16 @@ public class WeaponManager : MonoBehaviour
     public GameObject pistolUI;
     public GameObject crossbowUI;
     public GameObject syringerUI;
-
     private BaseWeapon currentWeapon;
+
+    [Header("Ui tutorial popup")]
+    public GameObject WeaponswapTutorial;
+    
 
     void Start()
     {
         EquipWeapon(0);
+        WeaponswapTutorial.gameObject.SetActive(true);
     }
 
     void Update()
@@ -24,6 +28,7 @@ public class WeaponManager : MonoBehaviour
             pistolUI.SetActive(true);
             crossbowUI.SetActive(false);
             syringerUI.SetActive(false);
+            WeaponswapTutorial.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
@@ -31,6 +36,7 @@ public class WeaponManager : MonoBehaviour
             pistolUI.SetActive(false);
             crossbowUI.SetActive(true);
             syringerUI.SetActive(false);
+            WeaponswapTutorial.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
@@ -38,6 +44,7 @@ public class WeaponManager : MonoBehaviour
             pistolUI.SetActive(false);
             crossbowUI.SetActive(false);
             syringerUI.SetActive(true);
+            WeaponswapTutorial.SetActive(false);
         }
 
         if (Input.GetButtonDown("Fire1") && currentWeapon != null)
