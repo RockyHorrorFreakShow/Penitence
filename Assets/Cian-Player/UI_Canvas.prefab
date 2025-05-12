@@ -86,7 +86,8 @@ GameObject:
   - component: {fileID: 4800659467483265663}
   - component: {fileID: 6818731519838636064}
   - component: {fileID: 1326352663875174856}
-  m_Layer: 5
+  - component: {fileID: 4262776932526591847}
+  m_Layer: 0
   m_Name: SyringerUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,6 +151,30 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4262776932526591847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878940791877620719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0674f2e7c441bef42b5f0d90283268c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetImage: {fileID: 1326352663875174856}
+  frames:
+  - {fileID: 5127601038194956890, guid: 3c3fb0d03569b7440853f4c643661fa8, type: 3}
+  - {fileID: -2361162029657878770, guid: 3c3fb0d03569b7440853f4c643661fa8, type: 3}
+  - {fileID: 4906037218573570437, guid: 3c3fb0d03569b7440853f4c643661fa8, type: 3}
+  - {fileID: -6645486178941630582, guid: 3c3fb0d03569b7440853f4c643661fa8, type: 3}
+  - {fileID: 1999079737264433920, guid: 3c3fb0d03569b7440853f4c643661fa8, type: 3}
+  - {fileID: -6069061886386620901, guid: 3c3fb0d03569b7440853f4c643661fa8, type: 3}
+  - {fileID: 4211412518636454927, guid: 3c3fb0d03569b7440853f4c643661fa8, type: 3}
+  - {fileID: -1101570815959557609, guid: 3c3fb0d03569b7440853f4c643661fa8, type: 3}
+  - {fileID: -5970859339276215951, guid: 3c3fb0d03569b7440853f4c643661fa8, type: 3}
+  frameRate: 14
 --- !u!1 &902392753071135115
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +299,8 @@ GameObject:
   - component: {fileID: 8753635636958230750}
   - component: {fileID: 6840789607224824943}
   - component: {fileID: 2361576279517218591}
-  m_Layer: 5
+  - component: {fileID: 4203857417737717733}
+  m_Layer: 0
   m_Name: pistolUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +372,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161467463297390170}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: -7469209297011672511, guid: 8d61de9a5381aab42ac3f04ae5d2eafd, type: 3}
   m_CullingMode: 0
@@ -371,6 +397,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f34f24c629e465489a9b998cbf1f13f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4203857417737717733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161467463297390170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0674f2e7c441bef42b5f0d90283268c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetImage: {fileID: 8753635636958230750}
+  frames:
+  - {fileID: -6778098048132485789, guid: 8d61de9a5381aab42ac3f04ae5d2eafd, type: 3}
+  - {fileID: -5519055824863382360, guid: 8d61de9a5381aab42ac3f04ae5d2eafd, type: 3}
+  - {fileID: -241236623958249084, guid: 8d61de9a5381aab42ac3f04ae5d2eafd, type: 3}
+  - {fileID: -6851558988432761314, guid: 8d61de9a5381aab42ac3f04ae5d2eafd, type: 3}
+  - {fileID: -5700644922696344996, guid: 8d61de9a5381aab42ac3f04ae5d2eafd, type: 3}
+  - {fileID: 5913420470032748553, guid: 8d61de9a5381aab42ac3f04ae5d2eafd, type: 3}
+  frameRate: 15
 --- !u!1 &3422162902322959661
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +715,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4439303675687380317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 20}
   m_LocalScale: {x: 8.421828, y: 2.3378, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1139,7 +1186,8 @@ GameObject:
   - component: {fileID: 3805579607062997540}
   - component: {fileID: 158652044718814155}
   - component: {fileID: 408891294514172460}
-  m_Layer: 5
+  - component: {fileID: 8390754324966119259}
+  m_Layer: 0
   m_Name: crossbowUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1203,3 +1251,30 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8390754324966119259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737859173686203873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0674f2e7c441bef42b5f0d90283268c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetImage: {fileID: 408891294514172460}
+  frames:
+  - {fileID: -5257622303782834406, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: -4095972855620333611, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: 5805475309378010679, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: 3398281947614401303, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: -2278584865791024229, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: 7593234801748190462, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: 5567877879812378592, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: 4488533350909823503, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: 2616535206098543519, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: -6168664999392145159, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: -3546499894678543792, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  - {fileID: 2804107734033412463, guid: 5568e50f897712f4aa61f7b5ff416159, type: 3}
+  frameRate: 13

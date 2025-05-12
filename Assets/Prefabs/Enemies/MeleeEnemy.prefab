@@ -529,6 +529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthText: {fileID: 5213019888058233448}
   invincibilityTime: 1
+  PlayerAudioSource: {fileID: 0}
+  DamageSFX: {fileID: 0}
 --- !u!212 &150808747031587687
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -753,7 +755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9135436960297475970
 RectTransform:
   m_ObjectHideFlags: 0
