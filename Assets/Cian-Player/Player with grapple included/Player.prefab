@@ -184,9 +184,9 @@ MonoBehaviour:
   - {fileID: 1895093826060906310, guid: 889c5260cb046d04092fcd2a9868f47e, type: 3}
   - {fileID: 935513096085895598, guid: 1066e7a7ce5a8b84b8a21b39ce24d777, type: 3}
   playerCamera: {fileID: 0}
-  crossbowUI: {fileID: 0}
   pistolUI: {fileID: 0}
-  SyringerUI: {fileID: 0}
+  crossbowUI: {fileID: 0}
+  syringerUI: {fileID: 0}
 --- !u!114 &2357337689212501318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517211076771214905}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5e549d7dc5e848499399945648b58c6, type: 3}
   m_Name: 
@@ -220,6 +220,7 @@ MonoBehaviour:
   MeathookOrigin: {fileID: 0}
   grappleSpeed: 15
   cooldownTime: 5
+  GrappleTutorial: {fileID: 0}
 --- !u!114 &2269328618225800318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +228,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517211076771214905}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a39a3decc0050a44baa80066850f353d, type: 3}
   m_Name: 
@@ -239,6 +240,8 @@ MonoBehaviour:
   stunDuration: 5
   Keybind: 102
   cooldownDuration: 7
+  PenanceStareLight: {fileID: 0}
+  PenanceTutorial: {fileID: 0}
 --- !u!1 &5440380363451532247
 GameObject:
   m_ObjectHideFlags: 0

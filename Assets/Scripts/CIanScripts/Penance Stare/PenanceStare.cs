@@ -12,11 +12,14 @@ public class PenanceStare : MonoBehaviour
 
     public float cooldownDuration = 3f;  // in seconds
     private float cooldownTimer = 0f;    //i worded these weird, but this is checking what number the timer has to be at to enable the ability again
+    public GameObject PenanceStareLight;
+    public GameObject PenanceTutorial;
 
     private bool isActive = false;
 
     void Start()
     {
+        PenanceTutorial.gameObject.SetActive(true);
         if (playerCamera == null)
         {
             playerCamera = Camera.main; //ensures the camera is actually selected, as the scene loader kinda just seems to skip over it?
@@ -25,10 +28,12 @@ public class PenanceStare : MonoBehaviour
 
     void Update()
     {
+        ActivateLight();
         if (Input.GetKeyDown(Keybind) && cooldownTimer <= 0f)
         {
             CastPenanceStareCone();
             cooldownTimer = cooldownDuration;  
+            PenanceTutorial.SetActive(false);
         }
 
         if (cooldownTimer > 0f)
@@ -39,6 +44,7 @@ public class PenanceStare : MonoBehaviour
 
     void CastPenanceStareCone()
     {
+        Debug.Log("FREEZE THY FOES");
         isActive = true;
 
         int rayCount = 10; // might need altering for consistency
@@ -85,6 +91,18 @@ public class PenanceStare : MonoBehaviour
         enemy.agent.velocity = Vector3.zero;
         enemy.SetAggroStatus(true);
         enemy.StateMachine.ChangeState(enemy.ChaseState);
+    }
+
+    private void ActivateLight()
+    {
+        if (isActive == true)
+        {
+            PenanceStareLight.gameObject.SetActive(true);
+        }
+        else if (isActive == false)
+        {
+            PenanceStareLight.gameObject.SetActive(false);
+        }
     }
 
     private void OnDrawGizmos()

@@ -12,11 +12,15 @@ public class Meathook_script : MonoBehaviour
     private bool isGrappling = false;
     private bool canGrapple = true;  
     public float grappleSpeed = 15f;  
-    public float cooldownTime = 5f;  
+    public float cooldownTime = 5f;
+
+    public GameObject GrappleTutorial;
+
 
 
     void Start()
     {
+        GrappleTutorial.gameObject.SetActive(true);
         playerRb = playerTransform.GetComponent<Rigidbody>();
     }
 
@@ -35,6 +39,7 @@ public class Meathook_script : MonoBehaviour
 
     void ShootGrapple()
     {
+        GrappleTutorial.SetActive(false);
         RaycastHit hit;
         Vector3 rayDirection = Camera.main.transform.forward;
 
